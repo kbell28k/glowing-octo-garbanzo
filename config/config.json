@@ -23,9 +23,9 @@
         "port": 3306,
         "dialect": "mysql"
       },
-      "development3": {
+      "development3(Eric)": {
         "username": "root",
-        "password": "12345678",
+        "password": "MS@ErL09022",
         "database": "neighbuddy_db",
         "host": "127.0.0.1",
         "port": 3306,
