@@ -1,12 +1,11 @@
-const 
-express = require('express'),
-passport = require('passport'),
-session = require('express-session'),
-bodyParser = require('body-parser'),
-exphbs = require('express-handlebars');
-
 const
-app = express();
+  express = require('express'),
+  app = express(),
+  passport = require('passport'),
+  session = require('express-session'),
+  bodyParser = require('body-parser'),
+  //env = require('dotenv').load(),
+  exphbs = require('express-handlebars');
 
 var PORT = process.env.PORT || 8080;
 
