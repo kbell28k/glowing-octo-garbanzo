@@ -1,12 +1,22 @@
-### Schema
+CREATE DATABASE neighbuddy_db;
+USE neighbuddy_db;
 
-CREATE DATABASE cat_db;
-USE cat_db;
-
-CREATE TABLE cats
+CREATE TABLE seller
 (
 	id int NOT NULL AUTO_INCREMENT,
-	name varchar(255) NOT NULL,
-	sleepy BOOLEAN DEFAULT false,
+	first_name varchar(255) NOT NULL,
+	last_name varchar(255) NOT NULL,
+	email varchar(255) NOT NULL,
+	zipcode int(5),
+	PRIMARY KEY (id)
+);
+
+CREATE TABLE helper
+(
+	id int NOT NULL AUTO_INCREMENT,
+	first_name varchar(255) NOT NULL,
+	last_name varchar(255) NOT NULL,
+	email varchar(255) NOT NULL,
+	zipcode int(5),
 	PRIMARY KEY (id)
 );
