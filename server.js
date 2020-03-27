@@ -1,8 +1,14 @@
-var express = require("express");
+const 
+express = require('express'),
+passport = require('passport'),
+session = require('express-session'),
+bodyParser = require('body-parser'),
+exphbs = require('express-handlebars');
+
+const
+app = express();
 
 var PORT = process.env.PORT || 8080;
-
-var app = express();
 
 // Serve static content for the app from the "public" directory in the application directory.
 app.use(express.static("public"));
@@ -11,8 +17,9 @@ app.use(express.static("public"));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-// Set Handlebars.
-var exphbs = require("express-handlebars");
+app.use(bodyParser.json());
+app.use(passport.initialize());
+app.use(passport.session());
 
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
