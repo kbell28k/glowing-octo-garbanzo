@@ -32,4 +32,9 @@ module.exports = function(app) {
     res.sendFile(path.join(__dirname, "../public/author-manager.html"));
   });
 
+  // Image Uploader page
+  app.get("/img-upload", (req, res) => {
+    res.sendFile(path.join(__dirname, "img_upload.html"));
+  });
+
 };
