@@ -1,0 +1,19 @@
+// Place your settings in this file to overwrite default and user settings.
+{
+    "workbench.colorCustomizations": {
+      "activityBar.background": "#496400",
+      "activityBar.foreground": "#fafafa"
+    },
+    
+    "editor.formatOnSaveTimeout": 3000,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.codeActionsOnSave": {
+      // For ESLint
+      "source.fixAll.eslint": true,
+      // For TSLint
+      "source.fixAll.tslint": true,
+      // For Stylelint
+      "source.fixAll.stylelint": true
+    }
+  }
+  

@@ -1,50 +1,58 @@
 {
-    "development": {
-      "username": "root",
-      "password": "12345678",
-      "database": "neighbuddy_db",
-      "host": "127.0.0.1",
-      "port": 3306,
-      "dialect": "mysql"
-    },
-    "development1": {
-        "username": "root",
-        "password": "12345678",
-        "database": "neighbuddy_db",
-        "host": "127.0.0.1",
-        "port": 3306,
-        "dialect": "mysql"
-      },
-      "development2": {
-        "username": "root",
-        "password": "12345678",
-        "database": "neighbuddy_db",
-        "host": "127.0.0.1",
-        "port": 3306,
-        "dialect": "mysql"
-      },
-      "development3(Eric)": {
-        "username": "root",
-        "password": "MS@ErL09022",
-        "database": "neighbuddy_db",
-        "host": "127.0.0.1",
-        "port": 3306,
-        "dialect": "mysql"
-      },
-    "test": {
-      "username": "root",
-      "password": null,
-      "database": "database_test",
-      "host": "127.0.0.1",
-      "port": 3306,
-      "dialect": "mysql"
-    },
-    "production": {
-      "username": "root",
-      "password": null,
-      "database": "database_production",
-      "host": "127.0.0.1",
-      "port": 3306,
-      "dialect": "mysql"
-    }
+  "development": {
+    "username": "root",
+    "password": "mysql123",
+    "database": "neighbuddy_db",
+    "host": "127.0.0.1",
+    "port": 3306,
+    "dialect": "mysql"
+  },
+  "developmentm": {
+    "username": "root",
+    "password": "mysql123",
+    "database": "neighbuddy_db",
+    "host": "127.0.0.1",
+    "port": 3306,
+    "dialect": "mysql"
+  },
+  "developmentk": {
+    "username": "root",
+    "password": "mysql123",
+    "database": "neighbuddy_db",
+    "host": "127.0.0.1",
+    "port": 3306,
+    "dialect": "mysql"
+  },
+  "developmenti": {
+    "username": "root",
+    "password": "12345678",
+    "database": "neighbuddy_db",
+    "host": "127.0.0.1",
+    "port": 3306,
+    "dialect": "mysql"
+  },
+  "developmente": {
+    "username": "root",
+    "password": "MS@ErL09022",
+    "database": "neighbuddy_db",
+    "host": "127.0.0.1",
+    "port": 3306,
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": "database_test",
+    "host": "127.0.0.1",
+    "port": 3306,
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "root",
+    "password": null,
+    "database": "database_production",
+    "host": "127.0.0.1",
+    "port": 3306,
+    "dialect": "mysql"
   }
+}
