@@ -5,6 +5,7 @@ const express = require("express"),
   bodyParser = require("body-parser"),
   //env = require('dotenv').load(),
   exphbs = require("express-handlebars");
+  cloudinary = require('cloudinary').v2;
 
 var PORT = process.env.PORT || 8080;
 
@@ -24,12 +25,21 @@ app.use(passport.initialize());
 
 app.use(passport.session());
 
+// Cloudinary Config
+
+cloudinary.config({ 
+  cloud_name: 'dhitmyxio', 
+  api_key: '434933154362283', 
+  api_secret: '6t_Ajztu1CGhNdF4GswNfotXduw' 
+});
+
 // Parse application body as JSON
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
+// Handlebars.registerPartial("img_upload", "{{ img_upload }}");
 
 // Import routes and give the server access to them.
 require("./routes/html-routes.js")(app);

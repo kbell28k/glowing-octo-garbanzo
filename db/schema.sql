@@ -20,3 +20,29 @@ CREATE TABLE helper
 	zipcode int(5),
 	PRIMARY KEY (id)
 );
+
+CREATE TABLE offer
+(
+	id int NOT NULL AUTO_INCREMENT,
+    user_id INT NOT NULL,
+    zip_code INT NOT NULL,
+	name varchar(45) NOT NULL,
+	price INT NOT NULL,
+    available BOOLEAN DEFAULT true,
+    open_to_trade BOOLEAN DEFAULT false,
+    trade_wishlist varchar(255),
+    description varchar(255),
+	PRIMARY KEY (id)
+);
+
+CREATE TABLE need
+(
+	id int NOT NULL AUTO_INCREMENT,
+    user_id INT NOT NULL,
+    zip_code INT NOT NULL,
+	name varchar(45) NOT NULL,
+    open_to_trade BOOLEAN DEFAULT false,
+    trade_offers varchar(255),
+    description varchar(255),
+	PRIMARY KEY (id)
+);
