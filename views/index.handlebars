@@ -99,84 +99,24 @@
     <div class="parallax"><img src="assets/images/background2.png" alt="Unsplashed background img 2"></div>
   </div>
 
-
-
-
-<!--Card Holder-->
-
 <div class="row">
-  <div class="col s6 m4 " id="card1">
-    <div class="card-panel white">
-      <span class="black-text">
+  <div class="col s6 m3 " id="card1">
         <div class="row">
-          <form class="col s12">
-            <h6> I am ready to Help</h6>
-            <div class="row">
-              <div class="input-field col s6">
-                <input id="first_name" type="text" class="validate">
-                <label for="first_name">First Name</label>
-              </div>
-              <div class="input-field col s6">
-                <input id="last_name" type="text" class="validate">
-                <label for="last_name">Last Name</label>
-              </div>
-            </div>
-            <div class="row">
-              <div class="input-field col s12">
-                <input id="email" type="email" class="validate">
-                <label for="email">Email</label>
-              </div>
-            </div>
-             <div class="row">
-              <div class="input-field col s12">
-                <input id="areaId2" type="area" class="validate">
-                <label for="text">Area</label>
-              </div>
-            </div>
-       
-          </form>
-        </div>        
-      </span>
-    </div>
+            {{> seller }}
+        </div>
   </div>
-  <div class="col s6 m3 " ><img src="assets/images/exchange.png"  id="arrow" width ="300px"></div>>
-  <div class="col s6 m4" id="card2">
-    <div class="card-panel white">
-      <span class="black-text">
+
+  <div class="col s6 m3">
+      <img src="assets/images/exchange.png" id="arrow" width ="250px">
+  </div>
+
+    <div class="col s6 m3 " id="card1">
         <div class="row">
-          <form class="col s12">
-            <h6> I need Help</h6>
-            <div class="row">
-              <div class="input-field col s6">
-                <input id="first_name" type="text" class="validate">
-                <label for="first_name">First Name</label>
-              </div>
-              <div class="input-field col s6">
-                <input id="last_name" type="text" class="validate">
-                <label for="last_name">Last Name</label>
-              </div>
-            </div>
-            <div class="row">
-              <div class="input-field col s12">
-                <input id="email" type="email" class="validate">
-                <label for="email">Email</label>
-              </div>
-            </div>
-             <div class="row">
-              <div class="input-field col s12">
-                <input id="areaId2" type="area" class="validate">
-                <label for="text">Area</label>
-              </div>
-            </div>
-       
-          </form>
-        </div>    
-      </span>
+            {{> helper }}
+        </div>
     </div>
-  </div>
+
 </div>
-
-
 
  <div class="parallax-container valign-wrapper">
     <div class="section no-pad-bot">
@@ -225,6 +165,8 @@
       </div>
     </div>
   </footer>
+
+
 
 
 
