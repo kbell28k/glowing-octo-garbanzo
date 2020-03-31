@@ -1,42 +1,40 @@
-module.exports = function (sequelize, Sequelize) {
-  var User = sequelize.define("user", {
-    id: {
-      autoIncrement: true,
-      primaryKey: true,
-      type: Sequelize.INTEGER
-    },
-    firstname: {
-      type: Sequelize.STRING,
-      notEmpty: true
-    },
-    lastname: {
-      type: Sequelize.STRING,
-      notEmpty: true
-    },
-    username: {
-      type: Sequelize.TEXT
-    },
-    about: {
-      type: Sequelize.TEXT
-    },
+var bcrypt = require("bcryptjs");
+// Creating our User model
+module.exports = function (sequelize, DataTypes) {
+  var User = sequelize.define("User", {
     email: {
-      type: Sequelize.STRING,
+      type: DataTypes.STRING,
+      allowNull: false,
+      unique: true,
       validate: {
         isEmail: true
       }
     },
+
     password: {
-      type: Sequelize.STRING,
+      type: DataTypes.STRING,
       allowNull: false
-    },
-    last_login: {
-      type: Sequelize.DATE
-    },
-    status: {
-      type: Sequelize.ENUM("active", "inactive"),
-      defaultValue: "active"
     }
   });
 
+  User.prototype.validPassword = function (password) {
+    return bcrypt.compareSync(password, this.password);
+  };
+
+  User.addHook("beforeCreate", function (user) {
+    user.password = bcrypt.hashSync(
+      user.password,
+      bcrypt.genSaltSync(10),
+      null
+    );
+  });
   return User;
 };
+
+// user.associate = function (models) {
+//   user.hasMany(models.post, {
+//     foreignKey: {
+//       allowNull: false
+//     }
+//   });
+// };
