@@ -21,7 +21,7 @@ CREATE TABLE helper
 	PRIMARY KEY (id)
 );
 
-CREATE TABLE offer
+CREATE TABLE posts
 (
 	id int NOT NULL AUTO_INCREMENT,
     user_id INT NOT NULL,
@@ -32,17 +32,8 @@ CREATE TABLE offer
     open_to_trade BOOLEAN DEFAULT false,
     trade_wishlist varchar(255),
     description varchar(255),
-	PRIMARY KEY (id)
+	PRIMARY KEY (id),
+	img_id varchar(250),
+	type varchar(10)
 );
 
-CREATE TABLE need
-(
-	id int NOT NULL AUTO_INCREMENT,
-    user_id INT NOT NULL,
-    zip_code INT NOT NULL,
-	name varchar(45) NOT NULL,
-    open_to_trade BOOLEAN DEFAULT false,
-    trade_offers varchar(255),
-    description varchar(255),
-	PRIMARY KEY (id)
-);
