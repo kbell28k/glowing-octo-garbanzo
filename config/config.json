@@ -2,7 +2,7 @@
   "development": {
     "username": "root",
     "password": "mysql123",
-    "database": "neighbuddy_db",
+    "database": "passport_demo",
     "host": "127.0.0.1",
     "port": 3306,
     "dialect": "mysql"
@@ -10,7 +10,7 @@
   "developmentm": {
     "username": "root",
     "password": "mysql123",
-    "database": "neighbuddy_db",
+    "database": "passport_demo",
     "host": "127.0.0.1",
     "port": 3306,
     "dialect": "mysql"
@@ -18,7 +18,7 @@
   "developmentk": {
     "username": "root",
     "password": "mysql123",
-    "database": "neighbuddy_db",
+    "database": "passport_demo",
     "host": "127.0.0.1",
     "port": 3306,
     "dialect": "mysql"
@@ -26,7 +26,7 @@
   "developmenti": {
     "username": "root",
     "password": "12345678",
-    "database": "neighbuddy_db",
+    "database": "passport_demo",
     "host": "127.0.0.1",
     "port": 3306,
     "dialect": "mysql"
@@ -34,7 +34,7 @@
   "developmente": {
     "username": "root",
     "password": "MS@ErL09022",
-    "database": "neighbuddy_db",
+    "database": "passport_demo",
     "host": "127.0.0.1",
     "port": 3306,
     "dialect": "mysql"
