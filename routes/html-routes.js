@@ -5,6 +5,7 @@
 // Dependencies
 // =============================================================
 var path = require("path");
+var db = require("../models");
 
 // Requiring custom middleware for checking if a user is logged in
 var isAuthenticated = require("../config/middleware/isAuthenticated");
@@ -38,9 +39,29 @@ module.exports = function (app) {
     res.render("members", {});
   });
 
+  app.get("/allitems", isAuthenticated, async function (req, res) {
+    console.log("reached members page");
+    if (!req.user) {
+      res.redirect("/");
+      return
+    }
+    var query = {};
+   const zipCode = req.user.zipCode;
+   query.item_zipCode =zipCode ;
+   const data = await  db.Post.findAll({
+      where: query,
+      include: [db.User]
+    }).map(el => el.get({ plain: true })) ;
+
+    console.log(data   )
+     res.render("allitems", { dbPost: data    , layout: 'main'});
+   
+    
+  });
+
   // cms route loads cms.html
   app.get("/seller", function (req, res) {
-    res.render("seller", {});
+    res.render("seller", {title: 'my other page', layout: 'main'});
   });
 
   app.get("/signup", function (req, res) {

@@ -61,7 +61,7 @@ module.exports = function (app) {
       UserId: req.user.id
     })
       .then(function () {
-        res.redirect(200, "/members");
+        res.redirect(200, "/allitems");
       })
       
   });
