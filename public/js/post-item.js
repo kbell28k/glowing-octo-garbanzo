@@ -1,4 +1,25 @@
 $(document).ready(function () {
+
+    // Uploading photo
+
+    var imageUrl = "";
+
+    var myWidget = cloudinary.createUploadWidget({
+      cloudName: 'dhitmyxio', 
+      uploadPreset: 'sdnfqzof'}, (error, result) => { 
+        if (!error && result && result.event === "success") { 
+          console.log('Done! Here is the image info: ', result.info);
+           imageUrl = result.info.url;
+           console.log(imageUrl);
+        }
+      }
+    );
+    
+    document.getElementById("upload_widget").addEventListener("click", function(){
+        myWidget.open();
+      }, false);
+
+
     // Getting references to our form and input
     var postItemForm = $("form.item-post");
     var nameInput = $("input#name");
@@ -14,7 +35,7 @@ $(document).ready(function () {
         trade: tradeInput.val().trim(),
         description: descriptionInput.val().trim()
       };
-      itemData.trade = itemData.trade === 'YES' ? true: false;
+      itemData.trade = itemData.trade === 'Yes' ? true: false;
       if (!itemData.name || !itemData.price || !itemData.trade || !itemData.description) {
         return;
       }
@@ -33,8 +54,7 @@ $(document).ready(function () {
         name, 
         price, 
         trade, 
-        description,
-        
+        description
       })
         .then(function (data) {
           window.location.replace("/members");
@@ -47,5 +67,9 @@ $(document).ready(function () {
       $("#alert .msg").text(err.responseJSON);
       $("#alert").fadeIn(500);
     }
+
+
+
   });
+  
   
