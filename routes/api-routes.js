@@ -49,4 +49,24 @@ module.exports = function (app) {
       });
     }
   });
+
+  app.post("/api/post-item", function (req, res) {
+    console.log({ t: "post", body: req.body, user: req.user });
+    db.Post.create({
+      item_name: req.body.name,
+      item_price: req.body.price,
+      item_description: req.body.description,
+      item_trade:  req.body.trade,
+      item_zipCode: req.user.zipCode,
+      UserId: req.user.id
+    })
+      .then(function () {
+        res.redirect(200, "/members");
+      })
+      
+  });
+
+
+
+
 };

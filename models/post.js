@@ -7,9 +7,29 @@ module.exports = function (sequelize, DataTypes) {
         len: [1]
       }
     },
+    item_price: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      len: [1]
+    },
+    item_zipCode: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      len: [1]
+    },
     item_description: {
       type: DataTypes.TEXT,
       allowNull: false,
+      len: [1]
+    },
+    item_trade: {
+      type: DataTypes.BOOLEAN,
+      allowNull: false,
+      len: [1]
+    },
+    item_image: {
+      type: DataTypes.TEXT,
+      allowNull: true,
       len: [1]
     }
   });
