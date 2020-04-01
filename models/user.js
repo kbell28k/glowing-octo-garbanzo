@@ -14,12 +14,12 @@ module.exports = function (sequelize, DataTypes) {
     password: {
       type: DataTypes.STRING,
       allowNull: false
-    } //,
+    },
 
-    //zipcode: {
-    // type: DataTypes.INTEGER,
-    // allowNull: false
-    //}
+    zipCode: {
+      type: DataTypes.INTEGER,
+      allowNull: true
+    }
   });
 
   User.prototype.validPassword = function (password) {
