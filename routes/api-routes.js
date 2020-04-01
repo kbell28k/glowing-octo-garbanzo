@@ -43,6 +43,7 @@ module.exports = function (app) {
       res.json({
         email: req.user.email,
         id: req.user.id
+        //zipcode: req.user.zipcode
       });
     }
   });
