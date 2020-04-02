@@ -31,7 +31,7 @@
     "port": 3306,
     "dialect": "mysql"
   },
-  "development": {
+  "developmente": {
     "username": "root",
     "password": "MS@ErL09022",
     "database": "passport_demo",
