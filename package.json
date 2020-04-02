@@ -22,13 +22,13 @@
   },
   "homepage": "https://github.com/kbell28k/glowing-octo-garbanzo#readme",
   "devDependencies": {
+    "dotenv": "^4.0.0",
     "eslint": "^6.8.0",
     "prettier": "^2.0.2"
   },
   "dependencies": {
     "bcryptjs": "2.4.3",
     "cloudinary": "^1.20.0",
-    "dotenv": "^4.0.0",
     "express": "^4.17.1",
     "express-handlebars": "^3.1.0",
     "express-session": "^1.15.0",
