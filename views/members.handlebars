@@ -7,7 +7,6 @@
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/lumen/bootstrap.min.css"/>
-
     <link href="stylesheets/style.css" rel="stylesheet" />
   </head>
 
@@ -15,33 +14,31 @@
  <nav class="white" role="navigation">
     <div class="nav-wrapper container">
   <img id="uslogo" src="assets/images/newflag.png" width="80" > 
-     
       <a id="logo-container" href="#" class="brand-logo">Neighbuddy</a>
-
       <ul class="right hide-on-med-and-down">
         <!-- Search engine-->
        <li>   <nav>
         <div class="nav-wrapper">
-          <form>
+         <!-- <form>
             <div class="input-field white">
               <input id="search" placeholder = "Search by zip  " type="search" required>
               <label class="label-icon"  for="search"><i class="material-icons black-text">search</i></label>
               <i class="material-icons">close</i>
             </div>
-          </form>
+          </form> -->
         </div>
       </nav> </li>
         <li><a href="/">Home</a></li>
         <li><a href="/signup">Sign Up</a></li>
-        <li><a href="/login">Login</a></li>
-        <li><a href="/seller">Post</a></li>
+        <li><a href="/members">Post</a></li>
+        <li><a href="/allitems">All Items</a></li>
       </ul>
 
       <ul id="nav-mobile" class="sidenav">
         <li><a href="/">Home</a></li>
         <li><a href="/signup">Sign Up</a></li>
-        <li><a href="/login">Login</a></li>
-        <li><a href="/seller">Post</a></li>
+        <li><a href="/members">Post</a></li>
+        <li><a href="/allitems">All Items</a></li>
       </ul>
       <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     </div>
@@ -49,7 +46,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6 col-md-offset-3">
-          <h2 class="center-align">Welcome <span class="member-name"></span></h2>
+          <h4 class="left-align">Welcome <span class="member-name"></span></h4>
         </div>
       </div>
     </div>
@@ -59,7 +56,6 @@
             </div>
 
 			<div class="col-md-6 offset-md-3">
-        <button id="upload_widget" class="cloudinary-button">Upload a photo</button>
 				<form class="item-post">
 					<div class="form-group">
 						<label for="name">Item Name:</label>
@@ -75,10 +71,11 @@
 						<input placeholder="Write a brief description here..." class="form-control" rows="10" id="item-description" /> 
             <label for="image">Upload Image:</label>
 						<input placeholder="Yes" type="text" class="form-control" id="image">
+            <button id="upload_widget" class="cloudinary-button-sm">UPLOAD A PHOTO</button>
 						<br />
 						
 						<br />
-						<button type="submit" class="btn btn-default submit">Submit Item</button>
+						<button type="submit" class="btn btn-large submit blue">Submit Item</button>
 					</div>
 				</form>
                 <div class="col-md-3 offset-md-3">
@@ -92,4 +89,10 @@
     <script type="text/javascript" src="js/post-item.js"></script>
     <script src="assets/js/img_upload.js"></script>
   </body>
+
+<footer class="page-footer ">
+
+  </footer>
+
+
 </html>
