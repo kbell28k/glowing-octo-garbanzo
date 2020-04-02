@@ -40,7 +40,7 @@ module.exports = function (app) {
   });
 
   app.get("/allitems", isAuthenticated, async function (req, res) {
-    console.log("reached members page");
+    console.log("reached allitems page");
     if (!req.user) {
       res.redirect("/");
       return
@@ -67,9 +67,5 @@ module.exports = function (app) {
   app.get("/signup", function (req, res) {
     res.render("signup", {});
   });
-
-  // Image Uploader page
-  app.get("/img-upload", (req, res) => {
-    res.sendFile(path.join(__dirname, "img_upload.html"));
-  });
+  
 };
