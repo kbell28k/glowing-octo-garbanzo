@@ -1,8 +1,8 @@
- 
+
   <nav class="white" role="navigation">
     <div class="nav-wrapper container">
-  <img id="uslogo" src="assets/images/newflag.png" width="80" > 
-     
+  <img id="uslogo" src="assets/images/newflag.png" width="80" >
+
       <a id="logo-container" href="#" class="brand-logo">Neighbuddy</a>
 
       <ul class="right hide-on-med-and-down">
@@ -39,9 +39,9 @@
       <div class="container">
         <br><br>
       <!-- <h1 class="header center black-text text-lighten-2">A neighbor who has your back like a buddy does!"</h1> -->
-      
+
          <div class="bcolor"> <h4 class="header col s12 white-text text-lighten-2">A neighbor who has your back like a buddy does! - Neighbuddy</h4></div>
-        
+
        <!-- <div class="row center">
           <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>
         </div> -->
@@ -87,7 +87,7 @@
       </div>
 
     </div>
-  </div>  
+  </div>
 
 
   <div class="parallax-container valign-wrapper">
@@ -108,73 +108,11 @@
 
 <div class="row">
   <div class="col s6 m4 " id="card1">
-    <div class="card-panel white">
-      <span class="black-text">
-        <div class="row">
-          <form class="col s12">
-            <h6> I am ready to Help</h6>
-            <div class="row">
-              <div class="input-field col s6">
-                <input id="first_name" type="text" class="validate">
-                <label for="first_name">First Name</label>
-              </div>
-              <div class="input-field col s6">
-                <input id="last_name" type="text" class="validate">
-                <label for="last_name">Last Name</label>
-              </div>
-            </div>
-            <div class="row">
-              <div class="input-field col s12">
-                <input id="email" type="email" class="validate">
-                <label for="email">Email</label>
-              </div>
-            </div>
-             <div class="row">
-              <div class="input-field col s12">
-                <input id="areaId2" type="area" class="validate">
-                <label for="text">Area</label>
-              </div>
-            </div>
-       
-          </form>
-        </div>        
-      </span>
-    </div>
+    {{> seller}}
   </div>
-  <div class="col s6 m3 " ><img src="assets/images/exchange.png"  id="arrow" width ="300px"></div>>
+  <div class="col s6 m3 " ><img src="assets/images/exchange.png"  id="arrow" width ="300px"></div>
   <div class="col s6 m4" id="card2">
-    <div class="card-panel white">
-      <span class="black-text">
-        <div class="row">
-          <form class="col s12">
-            <h6> I need Help</h6>
-            <div class="row">
-              <div class="input-field col s6">
-                <input id="first_name" type="text" class="validate">
-                <label for="first_name">First Name</label>
-              </div>
-              <div class="input-field col s6">
-                <input id="last_name" type="text" class="validate">
-                <label for="last_name">Last Name</label>
-              </div>
-            </div>
-            <div class="row">
-              <div class="input-field col s12">
-                <input id="email" type="email" class="validate">
-                <label for="email">Email</label>
-              </div>
-            </div>
-             <div class="row">
-              <div class="input-field col s12">
-                <input id="areaId2" type="area" class="validate">
-                <label for="text">Area</label>
-              </div>
-            </div>
-       
-          </form>
-        </div>    
-      </span>
-    </div>
+    {{> helper}}
   </div>
 </div>
 
@@ -192,9 +130,8 @@
 {{> img_upload }}
 
   <footer class="page-footer ">
-    
+
   </footer>
 
 
 
- 
