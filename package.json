@@ -9,7 +9,7 @@
     "starti": "set NODE_ENV=developmenti && npm i && node server.js",
     "starte": "set NODE_ENV=developmente && npm i && node server.js",
     "startm": "set NODE_ENV=developmentm && npm i && node server.js",
-    "start": "node server"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
