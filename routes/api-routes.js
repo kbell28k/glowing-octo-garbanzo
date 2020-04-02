@@ -51,7 +51,7 @@ module.exports = function (app) {
   });
 
   app.post("/api/post-item", function (req, res) {
-    console.log({ t: "post", body: req.body, user: req.user });
+    console.log({ t: "post", body: req.body, user: req.user});
     db.Post.create({
       item_name: req.body.name,
       item_price: req.body.price,
