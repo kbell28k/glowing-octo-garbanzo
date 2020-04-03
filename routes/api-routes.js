@@ -58,6 +58,7 @@ module.exports = function (app) {
       item_description: req.body.description,
       item_trade:  req.body.trade,
       item_zipCode: req.user.zipCode,
+      item_image: req.body.image,
       UserId: req.user.id
     })
       .then(function () {

@@ -56,7 +56,7 @@ module.exports = function (app) {
       include: [db.User]
     }).map(el => el.get({ plain: true }));
 
-    console.log(data);
+    
     res.render("allitems", { dbPost: data, layout: "main" });
   });
 
