@@ -48,10 +48,10 @@
     "dialect": "mysql"
   },
   "production": {
-    "username": "root",
-    "password": null,
-    "database": "database_production",
-    "host": "127.0.0.1",
+    "username": "b281fa2daee6ee",
+    "password": "101e6e42",
+    "database": "heroku_aeeef7a132a3ecc",
+    "host": "us-cdbr-iron-east-01.cleardb.net",
     "port": 3306,
     "dialect": "mysql"
   }
